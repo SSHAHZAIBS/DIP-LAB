@@ -1,0 +1,49 @@
+import cv2
+img = cv2.imread (r"C:\Users\Student\Desktop\download.jpg")
+type(img)
+img.shape
+print(img)
+cv2.imshow("image",img)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+img=cv2.resize(img,(500,500))
+cv2.imshow("image",img)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+//
+pip install Pillow
+from PIL import Image
+# Load an image
+img = Image.open(r"C:\Users\Student\Desktop\3.jpg")
+# Display the image
+img.show()
+import cv2
+img = cv2.imread ("4.jpg")
+
+img=cv2.resize(img,(200,300))
+cv2.imshow("image",img)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+
+# Split the image into its Blue, Green, and Red channels
+B, G, R = cv2.split(img)
+
+# Print each channel matrix
+print("Red Channel Matrix: \n", R)
+print("\nGreen Channel Matrix: \n", G)
+print("\nBlue Channel Matrix: \n", B)
+cv2.imshow('Red Channel', R)
+cv2.imshow('Green Channel', G)
+cv2.imshow('Blue Channel', B)
+
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+# Import the necessary libraries
+from sklearn.datasets import load_iris
+import pandas as pd
+
+# Load the Iris dataset
+iris = load_iris()
+
+# Display the dataset's description
+print(iris.DESCR)
